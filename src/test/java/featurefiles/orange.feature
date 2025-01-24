@@ -29,11 +29,14 @@ Feature: Test Orange HRM Application
     And user validate url
     And user validate Title
     And User click on Pimlink
-    
-    Scenario: Valdiate Pim Page Functionlaity
+
+  Scenario: Valdiate Pim Page Functionlaity
     When user is on pim page he validates PimPage url
     And user click on addEmployee button
     Then user enters firstname and lastname
     And user click on save button
-    
-    
+
+  Scenario: Enter Employ Personal Information
+    When user is on personalInfo page capture Empid
+    And user select his Nationality
+    And user click on personalInfo page save button
