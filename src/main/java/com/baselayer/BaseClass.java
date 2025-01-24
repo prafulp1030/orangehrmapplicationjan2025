@@ -14,6 +14,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 
