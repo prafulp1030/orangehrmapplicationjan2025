@@ -23,3 +23,13 @@ Feature: Test Orange HRM Application
     Given user enter "Admin" username
     And user enter "admin123" password
     Then user click on login button
+
+  Scenario: Validate HomePage Funtionality
+    When user is on homepage validate logo
+    And user validate url
+    And user validate Title
+    And User click on Pimlink
+    
+    Scenario: Valdiate Pim Page Functionlaity
+    When user is on pim page he validates PimPage url
+    
