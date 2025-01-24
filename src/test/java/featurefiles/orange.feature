@@ -32,4 +32,8 @@ Feature: Test Orange HRM Application
     
     Scenario: Valdiate Pim Page Functionlaity
     When user is on pim page he validates PimPage url
+    And user click on addEmployee button
+    Then user enters firstname and lastname
+    And user click on save button
+    
     
