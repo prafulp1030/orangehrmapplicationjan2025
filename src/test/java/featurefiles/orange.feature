@@ -40,3 +40,9 @@ Feature: Test Orange HRM Application
     When user is on personalInfo page capture Empid
     And user select his Nationality
     And user click on personalInfo page save button
+    
+   Scenario: Validate Search User Functionallity
+    When user click on employeeList button
+    Then user enter captured userId in text box
+    And user click on search button
+    
